@@ -24,7 +24,7 @@ except Exception as e:
     st.error(f"Failed to load model: {str(e)}")
     st.stop()  # 如果模型加载失败则停止应用
 
-def predict_mortality(patient_data):
+def predict_prevalence(patient_data):
     """使用预训练模型进行预测"""
     try:
         input_df = pd.DataFrame([patient_data])

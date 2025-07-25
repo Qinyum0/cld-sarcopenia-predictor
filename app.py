@@ -44,19 +44,19 @@ def main():
     
     # 侧边栏输入
     st.sidebar.header('Patient Parameters')
-    age = st.sidebar.slider('Age', 18, 100, 50)
-    education = st.sidebar.selectbox('Educational level', ['Below junior high school level', 'Junior high school and above'])
-    smoke = st.sidebar.radio('Smoking Status', ['No', 'Yes'])
-    drink = st.sidebar.radio('History of Drinking Alcohol', ['No', 'Yes'])
-    hypertension = st.sidebar.radio('Hypertension', ['No', 'Yes'])
-    dyslipidemia = st.sidebar.radio('Dyslipidemia', ['No', 'Yes'])
-    diabetes = st.sidebar.radio('Diabetes', ['No', 'Yes'])
-    kidney = st.sidebar.radio('Kidney Disease', ['No', 'Yes'])
-    stomach = st.sidebar.radio('Stomach Disease', ['No', 'Yes'])
-    psychiatric = st.sidebar.radio('Psychiatric Disease', ['No', 'Yes'])
-    memory = st.sidebar.radio('Memory Disorder', ['No', 'Yes'])
-    arthritis = st.sidebar.radio('Arthritis', ['No', 'Yes'])
-    asthma = st.sidebar.radio('Asthma', ['No', 'Yes'])
+    age = st.sidebar.slider('age', 18, 100, 50)
+    education = st.sidebar.selectbox('education', ['Below junior high school level', 'Junior high school and above'])
+    smoke = st.sidebar.radio('smoke', ['No', 'Yes'])
+    drink = st.sidebar.radio('drink', ['No', 'Yes'])
+    hypertension = st.sidebar.radio('hypertension', ['No', 'Yes'])
+    dyslipidemia = st.sidebar.radio('dyslipidemia', ['No', 'Yes'])
+    diabetes = st.sidebar.radio('diabetes', ['No', 'Yes'])
+    kidney = st.sidebar.radio('kidney', ['No', 'Yes'])
+    stomach = st.sidebar.radio('stomach', ['No', 'Yes'])
+    psychiatric = st.sidebar.radio('psychiatric', ['No', 'Yes'])
+    memory = st.sidebar.radio('memory', ['No', 'Yes'])
+    arthritis = st.sidebar.radio('arthritis', ['No', 'Yes'])
+    asthma = st.sidebar.radio('asthma', ['No', 'Yes'])
     
        
     if st.sidebar.button('Predict'):

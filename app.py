@@ -86,7 +86,7 @@ def main():
                 st.success(f'Low Risk: Sarcopenia probability {proba[0]*100:.2f}%')
             
             st.progress(proba[1])
-            st.write(f'Survival: {proba[0]*100:.2f}% | Sarcopenia: {proba[1]*100:.2f}%')
+            st.write(f'Non-Sarcopenia: {proba[0]*100:.2f}% | Sarcopenia: {proba[1]*100:.2f}%')
 
 if __name__ == '__main__':
     main()

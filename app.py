@@ -61,19 +61,19 @@ def main():
        
     if st.sidebar.button('Predict'):
         patient_data = {
-            'Age': age,
-            'Educational level': education,
-            'Smoking Status': smoke,
-            'History of Drinking Alcohol': drink,
-            'Hypertension': hypertension,
-            'Dyslipidemia': dyslipidemia,
-            'Diabetes': diabetes,
-            'Kidney Disease': kidney,
-            'Stomach Disease': stomach,
-            'Psychiatric Disease': psychiatric,
-            'Memory Disorder': memory,
-            'Arthritis': arthritis,
-            'Asthma': asthma
+            'age': age,
+            'education': 0 if education == 'Below junior high school level' else 1,
+            'smoke': 1 if smoke == 'Yes' else 0,
+            'drink_alcohol': 1 if drink == 'Yes' else 0,
+            'hypertension': 1 if hypertension == 'Yes' else 0,
+            'dyslipidemia': 1 if dyslipidemia == 'Yes' else 0,
+            'diabetes': 1 if diabetes == 'Yes' else 0,
+            'kidney_disease': 1 if kidney == 'Yes' else 0,
+            'stomach_disease': 1 if stomach == 'Yes' else 0,
+            'psychiatric_disease': 1 if psychiatric == 'Yes' else 0,
+            'memory_disease': 1 if memory == 'Yes' else 0,
+            'arthritis': 1 if arthritis == 'Yes' else 0,
+            'asthma': 1 if asthma == 'Yes' else 0
         }
         
         prediction, proba = predict_prevalence(patient_data)
